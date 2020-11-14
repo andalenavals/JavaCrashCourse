@@ -1,10 +1,10 @@
 package EmployeeExample;
 
-public class Employee implements Comparable {
+public class Employee2 {
 	private int id;
 	private String nome;
 	
-	public Employee(int id, String nome) {
+	public Employee2(int id, String nome) {
 		this.id=id;
 		this.nome=nome;
 	}
@@ -25,14 +25,6 @@ public class Employee implements Comparable {
 		this.nome = nome;
 	}
 	
-	public int compareTo(Object obj) {
-		return this.id-((Employee) obj).getId();
-	 }
-	
-	//public int compareTo(Object obj) {
-	//	return this.nome.compareTo(((Employee)obj).getNome());
-	//}
-
 	public String toString() {
 		return "Employee [id=" + id + ", nome=" + nome + "]";
 	}
